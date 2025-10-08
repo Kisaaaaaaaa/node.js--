@@ -1,0 +1,12 @@
+path模块是node.js官方提供的，用来处理路径的模块。
+使用之前需要导入：const path = require('path');
+
+1.path.join([...paths])
+path.join() 方法使用平台特定的分隔符将所有给定的 path 片段连接在一起，并规范化生成的路径。
+const pathStr=path.join('/a','/b/c','../d','e');
+console.log(pathStr);//  pathStr=\a\b\d\e
+主要用法：path.join(__dirname,'/fs模块学习/知识点.txt')
+
+2.path.basename(path[, ext])获取路径中的文件名
+
+3.path.extname(path)获取路径中的后缀名
