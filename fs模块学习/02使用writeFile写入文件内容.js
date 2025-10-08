@@ -1,5 +1,5 @@
 const fs=require('fs')
-fs.writeFile("./demo.txt",'hello world',function(err)
+fs.writeFile("./demo.txt",'hello world！',function(err)
 {
     //如果写入成功，则error的值为null
     //如果写入失败，则error的值为一个对象
